@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'Basic';
+    src: url('./basic.ttf') format('truetype');
+}
+:root{
+    --main-font: 'Basic';
+    --main-padding: 8px;
+    --font-color: #DBECE8;
+    --main-color: #496070;
+    --bg-color: #7297B0;
+    --header-height: 32px;
+    --default-margin: 72px;
+    --border-radius: 12px 12px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--main-font);
+    margin: 0;
+    color: var(--font-color);
+}
+#hamburger_menu{
+    display: none;
+}
+h1{
+    font-size: 24px;
+}
+header, #menu{
+    display: flex;
+    padding : 8px;
+    justify-content: space-between;
+    background-color: var(--main-color);
+}
+header > #menu{
+    width: 50%;
+}
+header > a, header > * > a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: var(--header-height);
+    text-align: center;
+}
+header > a, header > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header{
+    height: var(--header-height);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: calc(100% - 24px);
+    padding: 16px;
+}
+#menu > a > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    height: 100%;
+}
+#top{
+    margin-top: var(--header-height);
+    height: 50vh;
+    background-image: url('./images/background_code.jpg');
+    display: flex;
+}
+#top > div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-shadow: black 3px 3px 5px;
+}
+.marker{
+    width: 3px;
+    height: 3px;
+    background-color: #DBECE8;
+    border-radius: 100% 100%;
+}
+#profil_picture{
+    height: 192px;
+    box-shadow: black 3px 3px 5px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+.year{
+    display: flex;
+    width: 72px;
+    height: 72px;
+    border-width: 2px;
+    border-radius: 100% 100%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    border-color: #DBECE8;
+    background-color: #DBECE8;
+    color: var(--main-color);
+    margin: 0 auto;
+}
+.vertical_bar{
+    width: 3px;
+    padding: 0;
+    background-color: #DBECE8;
+    height: 100%;
+    margin: 0 auto;
+}
+td{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+table, tr{
+    border: none;
+}
+.max_width{
+    width: 95%;
+}
+.marker{
+    opacity: 0;
+}
+.carousel{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#carousel_content{
+    width: 50%;
+    border-radius: var(--border-radius);
+    background-color: var(--font-color);
+    color: var(--main-color);
+    padding: 12px;
+}
+#carousel_content > h4{
+    text-align: center;
+    font-size: 14px;
+}
+.arrow{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow > img:hover{
+    cursor: pointer;
+}
+.end_of_section{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    width: 50%;
+    height: 1px;
+    background-color: var(--font-color);
+}
+.arrow > img{
+    height: 52px;
+}
+.row_content{
+    height: 72px;
+    border-radius: var(--border-radius);
+    background-color: var(--font-color);
+    color: var(--main-color);
+    padding: 6px;
+
+}
+.row_content > h3{
+    font-size: 18px;
+    margin: 1px;
+}
+p{
+    font-size: 12px;
+}
+meter{
+    margin-left: 24px;
+}
+.meter{
+    height: 12px;
+    width: 12vw;
+    background-color: var(--font-color);
+    margin-left: 12px;
+    border-radius: var(--border-radius);
+    padding: 1px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 8px;
+}
+.meter > div{
+    background-color: var(--main-color);
+    height: 100%;
+    border-radius: var(--border-radius);
+}
+#skill_list{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+}
+.skill > img{
+    height: 52px;
+    width: 52px;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-color: var(--font-color);
+    border-style: solid;
+    margin: 12px;
+    border-width: 1px;
+    min-width: 152px;
+    height: 128px;
+    text-align: center;
+    padding: 5px;
+}
+.visible{
+    transition: 2s;
+    opacity: 100%;
+}
+
+.invisible{
+    opacity: 0;
+    transition: 0;
+}
+@media screen and (max-width: 952px){
+    #hamburger_menu{
+        display: block;
+        margin-right: 5px;
+    }
+    #menu{
+        display: none;
+        opacity: 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--main-color);
+        color: var(--font-color);
+        /*display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;*/
+        box-shadow: black 1px 0px 5px;
+    }
+    #menu > a{
+        margin-top: 52px;
+    }
+    #leave_menu{
+        display: none;
+        opacity: 0;
+        z-index: 1;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        top: 0;
+    }
+    .row_content > h3{
+        font-size: 14px;
+    }
+    p{
+        font-size: 10px;
+    }
+    #top{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #profil_picture{
+        height: 128px;
+        margin-top: var(--default-margin);
+    }
+   
+}
+
+@media print{
+
+    * .invisible.visible{
+        opacity: 100%;
+    }
+
+    header{
+        opacity: 0%;
+    }
+    section#top{
+        margin-top: -150px;
+    }
+    div#about{
+        font-family: sans-serif;
+        text-decoration: none;
+        text-shadow: none;
+    }
+    section#formation_section{
+        margin-top: -150px;
+    }
+
+    section#experience_section{
+        margin-top: 200px;
+    }
+
+    section#language_section{
+        margin-top: -100px;
+    }
+
+}
