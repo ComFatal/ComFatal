@@ -47,5 +47,143 @@
             </a>
         </div>
     </header>
+    <section id="top">
+        <div>
+            <img id="profil_picture" src="./images/profil.jpg" alt="photo de profile" onclick="onClickHamburgerMenu()">
+        </div>
+        <div id="about">
+            <h1>Matthieu Cusse</h1>
+            <p>23 ans</p>
+            <p>Technicien en télécommunication et réseau</p>
+            <p>+32494256571</p>
+            <p>Permit B et véhiculé</p>
+        </div>
+    </section>
+    <section id="formation_section" class="content">
+        <h2>Formation</h2>
+        <table class="max_width">
+            <tr>
+                <td>
+                    <div class="year"><span class="current_year"></span></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="period">
+                <td>
+                    <div class="vertical_bar"></div>
+                </td>
+                <td>
+                    <div class="row_content">
+                        <h3>Haute Ecole en Hainaut,Mons</h3>
+                        <p>Bachelier 2 : Informatique télécomunication et réseau , finalité Sécurité</p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="year"><span>2020</span></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="period">
+                <td>
+                    <div class="vertical_bar"></div>
+                </td>
+                <td>
+                    <div class="row_content">
+                        <h3>APM Ecole Technique,Mons-Belgique</h3>
+                        <p>Obtention du diplôme qualificatif de technicien en Informatique</p>    
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="year"><span>2019</span></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="period">
+                <td>
+                    <div class="vertical_bar"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><div class="year invisible visible"><span>2017</span></div></td>
+                <td>
+                    <div class="row_content invisible visible">
+                        <h3>Academie de Musique de La Bouverie</h3>
+                        <p>Optention du diplôme de transition 5 Solfège et de transition 3 de Trompette</p>    
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="end_of_section"></div>
+    </section>
+    <section id="experience_section" class="content invisible visible">
+        <h2>Expériences Professionnelle</h2>
+        <div class="carousel">
+            <div class="arrow previous"><img onclick="previousExp()" src="./images/arrow-left.svg" alt="previous content"/></div>
+            <div id="carousel_content"></div>
+            <div class="arrow next" ><img onclick="nextExp()" src="./images/arrow-right.svg" alt="next content"/></div>
+        </div>
+        <div class="end_of_section"></div>
+    </section>
+    <section id="language_section" class="content invisible visible">
+        <h2>Langue</h2>
+        <table>
+            <tr>
+                <td><b>Français</b></td>
+                <td>
+                    <div class="meter">
+                        <div class="level">100%</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Anglais</b></td>
+                <td>
+                    <div class="meter">
+                        <div class="level">90%</div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="end_of_section"></div>
+    </section>
+    <section id="skill_section" class="content invisible visible">
+        <h2>Compétence</h2>
+        <div id="skill_list">
+            <div class="skill">
+                <img src="./images/spreadsheet.svg" alt="Google sheet icon">
+                <p>Google Sheet</p>
+            </div>
+            <div class="skill">
+                <img src="./images/html.svg" alt="HTML icon">
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <img src="./images/css.svg" alt="CSS icon">
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <img src="./images/database.svg" alt="MySQL icon">
+                <p>MySQL</p>
+            </div>
+            <div class="skill">
+                <img src="./images/network.svg" alt="Network icon">
+                <p>Télécommunication et réseaux</p>
+            </div>
+        </div>
+        <div class="end_of_section"></div>
+    </section>
+    <section id="interest_section" class="content">
+        <h2>Centre d'intérêt</h2>
+        <ul>
+            <li>Compétition E-Sportive</li>
+            <li>Pokémon</li>
+            <li>Eve online</li> 
+        </ul>
+    </section>
 
 </body>
