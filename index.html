@@ -10,5 +10,42 @@
     <title>CV 2022-2023</title>
 </head>
 <body>
+    <header>
+        <a href="" class="h1">Matthieu Cusse</a>
+        <img id="hamburger_menu" src="./images/menu.svg" alt="menu hamburger" onclick="onClickHamburgerMenu()">
+        <div id="leave_menu" onclick="onClickHamburgerMenu()"></div>
+        <div id="menu">
+            <a class="menu_item" href="#formation_section" onclick="onClickMenuItem(this)" onmouseover="displayPoint(this)" onmouseout="disappearPoint(this)">
+                <div id="formation">
+                    <div>Formation</div>
+                    <div class="marker"></div>
+                </div>
+            </a>
+            <a class="menu_item" href="#experience_section" onclick="onClickMenuItem(this)" onmouseover="displayPoint(this)" onmouseout="disappearPoint(this)">
+                <div id="experience">
+                    <div>Expérience</div>
+                    <div class="marker"></div>
+                </div>
+            </a>
+            <a class="menu_item" href="#language_section"  onclick="onClickMenuItem(this)" onmouseover="displayPoint(this)" onmouseout="disappearPoint(this)">
+                <div id="language">
+                    <div>Langue</div>
+                    <div class="marker"></div>
+                </div>
+            </a>
+            <a class="menu_item" href="#skill_section"  onclick="onClickMenuItem(this)" onmouseover="displayPoint(this)" onmouseout="disappearPoint(this)">
+                <div id="skill">
+                    <div>Compétence</div>
+                    <div class="marker"></div>
+                </div>
+            </a>
+            <a class="menu_item" href="#interest_section"  onclick="onClickMenuItem(this)" onmouseover="displayPoint(this)" onmouseout="disappearPoint(this)">
+                <div id="interest">
+                    <div>Centre d'intérêt</div>
+                    <div class="marker"></div>
+                </div>
+            </a>
+        </div>
+    </header>
 
 </body>
