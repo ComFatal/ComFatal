@@ -1,0 +1,29 @@
+/* remise à zéro des paramètres de navigateur*/
+*{padding: 0;margin: 0}
+
+body {
+  background: rgb(176, 176, 176);
+  background-image:url(./images/2b59e76a46469c139fd37786e483d42f.jpg);
+}
+
+h1, h2, h3, h4, h5 {
+  color: wheat;
+}
+
+.text-lire{
+    color:#ffffff!important;
+}
+
+.row {
+  display: flex;
+  width: auto;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+.row1 {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  padding-top: 1%;
+}
